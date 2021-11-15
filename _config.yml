@@ -52,6 +52,9 @@ minima:
 #header_pages:
 # - about.md
 
+google_analytics: G-TZD19LKZ2C
+
+
 # Build settings
 theme: minima
 
