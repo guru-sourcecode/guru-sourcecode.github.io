@@ -128,6 +128,7 @@
 .page-content {
   color: $text-color-light;
   @include relative-font-size(1.1);
+  text-rendering: optimizeLegibility;
   padding: $spacing-unit 0;
   flex: 1 0 auto;
   display: inline-block;
@@ -165,10 +166,16 @@
 //
 
 
+.container {
+  max-width: 1100px;
+  height: auto;
+  margin: 60px auto;
+}
+
+
 .sections {
   vertical-align: top;
   display: inline-block;
-
   min-height: 50px;
 }
 
@@ -176,25 +183,25 @@
   width: 49%;
 }
 
-
 .sectionright {
   width: 49%;
 }
 
+
 .section-title {
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 550;
   margin-bottom: 15px;
 }
 
 .list-card.example {
   margin: 30px 0;
   -moz-box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.46);
-  margin: 30px 80px 30px 0;
+  margin: 30px 70px 30px 0;
   padding: 25px 25px 10px 25px;
   border-radius: 10px;
   background: #ffffff;
-  box-shadow: -20px 20px 60px #d9d9d9, 20px -20px 60px #ffffff;
+  box-shadow: -20px 20px 50px #c9c9e7, 10px -10px 500px #eeeeee;
 }
 
 .list-card .exp,
@@ -230,19 +237,28 @@
 }
 
 .slack .slackname {
+//   margin: 0;
+// padding: 0;
+// border: 0;
+// font-size: 100%;
+// font: inherit;
+// vertical-align: baseline;
+
   font-weight: 600;
   font-size: 16px;
   color: #1d1c1d;
 }
 
 .slack .slacktime {
-  font-size: 14px;
+  font-size: 13px;
   color: #616061;
+  margin-left: 5px;
 }
 
 .slack .slackmessage {
   font-size: 15px;
   color: #1d1c1d;
+  overflow: hidden;
 }
 
 .card {
@@ -264,6 +280,30 @@
   background-color: #fff;
   box-shadow: 0px 5px 50px -8px #ddd;
   cursor: pointer;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+    margin: 0px auto;
+  }
+  .card {
+    padding: 15px;
+    text-align: left;
+  }
+  .card h2 {
+    font-size: 70px;
+  }
+  .card,
+  .sections {
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+    float: left;
+  }
 }
 
 
