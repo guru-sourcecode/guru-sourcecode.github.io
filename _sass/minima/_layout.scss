@@ -136,6 +136,7 @@
 .page-intro {
   color: $text-color;
   @include relative-font-size(1.8);
+  padding: $spacing-unit 0;
   font-weight: 350;
 }
 
@@ -162,6 +163,108 @@
 //   @include relative-font-size(1.5);
 // }
 //
+
+
+.sections {
+  vertical-align: top;
+  display: inline-block;
+
+  min-height: 50px;
+}
+
+.sectionleft {
+  width: 49%;
+}
+
+
+.sectionright {
+  width: 49%;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.list-card.example {
+  margin: 30px 0;
+  -moz-box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.46);
+  margin: 30px 80px 30px 0;
+  padding: 25px 25px 10px 25px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: -20px 20px 60px #d9d9d9, 20px -20px 60px #ffffff;
+}
+
+.list-card .exp,
+.list-card div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.list-card .exp {
+  margin-right: 15px;
+  color: #4a90e2;
+  font-weight: 600;
+  width: 100px;
+}
+
+.list-card div {
+  width: 100%;
+}
+
+
+
+.slack {
+  padding-bottom: 15px;
+}
+
+
+.slack img {
+  width: 42px;
+  height: 42px;
+  border-radius: 5px;
+  float: left;
+  margin-right: 10px;
+}
+
+.slack .slackname {
+  font-weight: 600;
+  font-size: 16px;
+  color: #1d1c1d;
+}
+
+.slack .slacktime {
+  font-size: 14px;
+  color: #616061;
+}
+
+.slack .slackmessage {
+  font-size: 15px;
+  color: #1d1c1d;
+}
+
+.card {
+  width: 50%;
+  height: 200px;
+  background-color: #eef0f7;
+  display: inline-block;
+  margin: 7px 5px;
+  vertical-align: top;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.card-active,
+.card:hover {
+  transform: scale(1.02);
+  transition: 0.5s;
+  background-color: #fff;
+  box-shadow: 0px 5px 50px -8px #ddd;
+  cursor: pointer;
+}
 
 
 
